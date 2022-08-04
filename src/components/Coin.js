@@ -48,6 +48,10 @@ const Coin = () => {
     return <Loading />;
   }
 
+  if (details.localization === null || details.localization === undefined) {
+    return <Loading />;
+  }
+
   return (
     <>
       <div>
