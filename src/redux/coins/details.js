@@ -9,11 +9,9 @@ const initialState = {
 const fetchDetails = createAsyncThunk(
   GET_DETAILS,
   async (id) => {
-    console.log(id);
     const DETAILS_API = 'https://api.coingecko.com/api/v3/coins/';
     const response = await fetch(DETAILS_API + id);
     const data = await response.json();
-    console.log(data);
     return data;
   },
 );

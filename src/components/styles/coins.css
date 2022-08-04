@@ -53,6 +53,12 @@
   margin-bottom: 12px;
 }
 
+.singleCoin div h3,
+.singleCoin div p {
+  color: #fff;
+  text-align: right;
+}
+
 .singleCoin .nav-link p {
   background: transparent;
   border: 1px solid #fff;
@@ -66,10 +72,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.singleCoin div h3,
-.singleCoin div p {
-  color: #fff;
-  text-align: right;
 }
