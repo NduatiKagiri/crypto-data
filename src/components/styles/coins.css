@@ -1,3 +1,18 @@
+.coinsHeader {
+  width: 100%;
+  height: 45px;
+  background: #cc3f75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coinsHeader h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
 .coins {
   width: 100%;
   display: grid;
@@ -6,10 +21,18 @@
 
 .evenCoin {
   background: #db4580;
+  background-image: url('../580.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 
 .oddCoin {
   background: #cc3f75;
+  background-image: url('../cc3f.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 
 .singleCoin {

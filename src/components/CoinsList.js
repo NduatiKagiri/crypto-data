@@ -40,14 +40,19 @@ const CoinsList = () => {
   const allCoins = [...classedCoins].sort((a, b) => a.order - b.order);
 
   return (
-    <ul className="coins">
-      {allCoins.map((coin) => (
-        <CoinItem
-          key={coin.id}
-          coin={coin}
-        />
-      ))}
-    </ul>
+    <>
+      <div className="coinsHeader">
+        <h2>Crypto Coins</h2>
+      </div>
+      <ul className="coins">
+        {allCoins.map((coin) => (
+          <CoinItem
+            key={coin.id}
+            coin={coin}
+          />
+        ))}
+      </ul>
+    </>
   );
 };
 
