@@ -45,7 +45,7 @@ Feel free to check the issues page.
 Give a :star:️ if you like this project!
 
 ## Inspiration
-Original design by ![Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+Original design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ##:memo: License
 This project is MIT licensed.
