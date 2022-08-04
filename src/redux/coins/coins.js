@@ -5,7 +5,7 @@ const COINS_API = 'https://api.coingecko.com/api/v3/coins/list';
 const getCoinsFromAPI = async () => {
   const response = await fetch(COINS_API);
   const data = await response.json();
-  return data;
+  return data.slice(0, 30);
 };
 
 const GET_COINS = 'crypto-data/coins/GET_COINS';

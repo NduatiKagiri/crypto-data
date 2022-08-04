@@ -1,17 +1,20 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const CoinItem = (props) => {
   const { coin } = props;
 
   return (
-    <li className="rocket">
-      <NavLink to="/coin" className="nav-link">
+    <li className={`singleCoin ${coin.checker}`}>
+      <Link to={`/coin/${coin.id}`} className="nav-link">
+        <p>→</p>
+      </Link>
+      <div>
         <p>{coin.id}</p>
         <h3>{coin.name}</h3>
         <p>{coin.symbol}</p>
-      </NavLink>
+      </div>
     </li>
   );
 };

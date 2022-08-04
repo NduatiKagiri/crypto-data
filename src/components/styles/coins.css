@@ -1,0 +1,52 @@
+.coins {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.evenCoin {
+  background: #db4580;
+}
+
+.oddCoin {
+  background: #cc3f75;
+}
+
+.singleCoin {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px;
+  height: 175px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.singleCoin .nav-link {
+  margin-bottom: 12px;
+}
+
+.singleCoin .nav-link p {
+  background: transparent;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleCoin div h3,
+.singleCoin div p {
+  color: #fff;
+  text-align: right;
+}
