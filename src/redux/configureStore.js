@@ -5,7 +5,7 @@ import coinsReducer from './coins/coins';
 import detailsReducer from './coins/details';
 
 const rootReducer = combineReducers({
-  coins: coinsReducer,
+  coins: coinsReducer.reducer,
   details: detailsReducer.reducer,
 });
 

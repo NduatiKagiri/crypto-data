@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import store from '../redux/configureStore';
 import Coins from '../components/Coins';
 
-const renderMissions = (
+const renderCoins = (
   <Provider store={store}>
     <Coins />
   </Provider>
@@ -12,8 +12,8 @@ const renderMissions = (
 
 describe('Coins', () => {
   test('renders coins page', () => {
-    render(renderMissions);
-    const header = screen.getByText('Coins');
+    render(renderCoins);
+    const header = screen.getByText('Crypto');
     expect(header).toBeInTheDocument();
   });
 });

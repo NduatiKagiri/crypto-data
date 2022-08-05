@@ -18,8 +18,14 @@
 }
 
 .spinner {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 100vh;
+}
+
+.spinner p {
+  font-size: 19px;
+  font-weight: 300;
 }

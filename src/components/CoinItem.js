@@ -20,7 +20,7 @@ const CoinItem = (props) => {
 };
 
 CoinItem.propTypes = {
-  coin: PropTypes.instanceOf(Array).isRequired,
+  coin: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default CoinItem;

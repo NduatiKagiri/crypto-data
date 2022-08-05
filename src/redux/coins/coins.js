@@ -5,11 +5,14 @@ const COINS_API = 'https://api.coingecko.com/api/v3/coins/list';
 const getCoinsFromAPI = async () => {
   const response = await fetch(COINS_API);
   const data = await response.json();
-  return data.slice(0, 30);
+  return data.slice(0, 1000);
 };
 
 const GET_COINS = 'crypto-data/coins/GET_COINS';
-const initialState = [];
+const initialState = {
+  loading: false,
+  coins: [],
+};
 
 const fetchCoins = createAsyncThunk(
   GET_COINS,
@@ -24,9 +27,15 @@ const coinsSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchCoins.fulfilled, (state, action) => (action.payload));
+    builder.addCase(fetchCoins.fulfilled, (state, action) => ({
+      loading: false, coins: action.payload,
+    }));
+
+    builder.addCase(fetchCoins.pending, (state, action) => ({
+      loading: true, coins: action.payload,
+    }));
   },
 });
 
-export default coinsSlice.reducer;
+export default coinsSlice;
 export { fetchCoins };

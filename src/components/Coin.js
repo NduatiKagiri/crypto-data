@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { fetchDetails } from '../redux/coins/details';
 import Loading from './loading';
-import crypto from './crypto.jpeg';
+import microphone from '../images/microphone.svg';
+import setts from '../images/settings.svg';
 
 const Coin = () => {
   const { id } = useParams();
@@ -54,17 +55,26 @@ const Coin = () => {
 
   return (
     <>
-      <div>
+      <div className="topHeader">
         <Link to="/" className="nav-link detailsLink">
           <button type="button">
             &lt;
           </button>
         </Link>
+        <h5>Coin Details</h5>
+        <img
+          src={microphone}
+          alt="microphone"
+        />
+        <img
+          src={setts}
+          alt="Settings"
+        />
       </div>
       <div className="detailsHeader">
         <div className="detailsHeaderImage">
           <img
-            src={crypto}
+            src={details.image.small}
             alt={details.name}
           />
         </div>

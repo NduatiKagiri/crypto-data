@@ -1,10 +1,27 @@
-.detailsLink {
+.topHeader {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background: #db4580;
+  padding: 1px 18px 1px 5px;
+}
+
+.topHeader h5 {
+  font-size: 21px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.topHeader img {
+  height: 30px;
+  width: 30px;
+}
+
+.detailsLink {
+  background: #db4580;
   height: 50px;
-  padding-left: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .detailsLink button {
