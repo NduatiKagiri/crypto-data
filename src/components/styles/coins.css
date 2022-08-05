@@ -1,0 +1,92 @@
+.coinsHeader {
+  width: 100%;
+  height: 55px;
+  background: #cc3f75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coinsHeader h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.filter {
+  background: #cc3f75;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.filter h6 {
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+.coins {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.evenCoin {
+  background: #db4580;
+  background-image: url('../../images/580.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.oddCoin {
+  background: #cc3f75;
+  background-image: url('../../images/cc3f.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.singleCoin {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px;
+  height: 175px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.singleCoin .nav-link {
+  margin-bottom: 12px;
+}
+
+.singleCoin div h3,
+.singleCoin div p {
+  color: #fff;
+  text-align: right;
+}
+
+.singleCoin .nav-link p {
+  background: transparent;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
